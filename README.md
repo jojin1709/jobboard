@@ -1,5 +1,3 @@
-﻿# CODSOFT Internship - Jojin John
-
 # CODSOFT Internship - Jojin John
 
 **Internship Domain:** Web Development  
@@ -66,3 +64,4 @@ Each task includes:
 **Connect:**  
 🔗 [GitHub Profile](https://github.com/jojin1709)  
 🌐 [Portfolio Website](https://jojin-portfolio.netlify.app/)  
+
