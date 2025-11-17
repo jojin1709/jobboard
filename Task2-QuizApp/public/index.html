@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===========================
+        HOME SCREEN 
+=========================== -->
+<div id="home">
+    <div class="container">
+        <h1>Quiz App</h1>
+
+        <button class="main-btn" onclick="startQuiz()">Start Quiz</button>
+        <button class="alt-btn" onclick="showAddQuestion()">Add Question</button>
+        <button class="alt-btn" onclick="showDeleteScreen()">Delete Question</button>
+    </div>
+</div>
+
+
+<!-- ===========================
+        QUIZ SCREEN
+=========================== -->
+<div id="quiz-area" class="hidden">
+    <div class="container">
+        <div id="quiz-box"></div>
+    </div>
+</div>
+
+
+<!-- ===========================
+        SCORE SCREEN
+=========================== -->
+<div id="score-area" class="hidden">
+    <div class="container">
+        <div id="score-box"></div>
+        <button class="main-btn" onclick="goHome()">Restart</button>
+    </div>
+</div>
+
+
+<!-- ===========================
+        ADD QUESTION SCREEN
+=========================== -->
+<div id="add-area" class="hidden">
+    <div class="container">
+        <h2>Add New Question</h2>
+
+        <input id="new-q" class="txt" placeholder="Enter question">
+
+        <input id="o1" class="txt" placeholder="Option A">
+        <input id="o2" class="txt" placeholder="Option B">
+        <input id="o3" class="txt" placeholder="Option C">
+        <input id="o4" class="txt" placeholder="Option D">
+
+        <select id="correct" class="txt">
+            <option value="0">Correct: A</option>
+            <option value="1">Correct: B</option>
+            <option value="2">Correct: C</option>
+            <option value="3">Correct: D</option>
+        </select>
+
+        <button class="main-btn" onclick="saveQuestion()">Save Question</button>
+        <button class="alt-btn" onclick="goHome()">Back</button>
+    </div>
+</div>
+
+
+<!-- ===========================
+        DELETE QUESTION SCREEN
+=========================== -->
+<div id="delete-area" class="hidden">
+    <div class="container">
+        <h2>Delete Question</h2>
+        <div id="delete-list"></div>
+        <button class="alt-btn" onclick="goHome()">Back</button>
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
