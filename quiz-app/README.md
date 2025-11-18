@@ -1,103 +1,103 @@
-📘 Quiz App – PHP + MySQL
+# 🎯 Quiz App – PHP + MySQL
 
-A simple and interactive Quiz Management System built using PHP, MySQL, HTML, CSS, and JavaScript.
+A simple and interactive **Quiz Management System** built using PHP, MySQL, HTML, CSS, and JavaScript.  
 Users can take quizzes, submit answers, and view scores instantly.
 
-🚀 Features
+---
 
-📝 Create Quizzes (via PHP endpoints)
+## 🚀 Features
+- 📝 Create quizzes (via PHP endpoints)
+- 📥 Fetch quiz questions dynamically
+- 🧠 Submit answers & auto-calculate score
+- 📊 Instant results display
+- 🗄 Includes SQL schema for quick setup
+- 🎨 Clean UI built with HTML, CSS & JS
 
-📥 Fetch Quiz Questions dynamically
+---
 
-🧠 Submit Answers & Auto-Calculate Score
+## 📂 Project Structure
 
-📊 Instant Result Display
-
-📁 Includes SQL Schema for quick setup
-
-🎨 Clean UI built with HTML, CSS & JavaScript
-
-📂 Project Structure
-quiz-app/
- ├── public/
- │     ├── api/
- │     │     ├── create_quiz.php
- │     │     ├── db.php
- │     │     ├── get_quiz.php
- │     │     ├── get_quizzes.php
- │     │     └── submit_quiz.php
- │     ├── index.html
- │     ├── script.js
- │     └── style.css
- └── sql/
-       └── schema.sql
-
-🛠️ Tech Stack
-
-Backend: PHP
-
-Database: MySQL
-
-Frontend: HTML, CSS, JavaScript
-
-API Format: JSON
-
-Deployment: Localhost / XAMPP / WAMP / LAMP
-
-⚙️ Setup Instructions
-1️⃣ Import Database
-
-Open phpMyAdmin → create a database:
-
-quiz_app
+    quiz-app/
+    ├── public/
+    │ ├── api/
+    │ │ ├── create_quiz.php
+    │ │ ├── db.php
+    │ │ ├── get_quiz.php
+    │ │ ├── get_quizzes.php
+    │ │ └── submit_quiz.php
+    │ ├── index.html
+    │ ├── script.js
+    │ └── style.css
+    └── sql/
+    └── schema.sql
 
 
-Then import:
 
-sql/schema.sql
 
-2️⃣ Configure Database Connection
+---
 
-Edit public/api/db.php:
+## 🛠️ Tech Stack
 
+**Backend:** PHP  
+**Database:** MySQL  
+**Frontend:** HTML, CSS, JavaScript  
+**API Format:** JSON  
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Import Database  
+Create a database in phpMyAdmin: quiz_app
+
+
+---
+
+### 2️⃣ Configure Database Connection  
+Edit this file:
+
+
+
+Set your credentials:
+
+``php
 $host = "localhost";
 $user = "root";
 $password = "";
 $dbname = "quiz_app";
 
-3️⃣ Start Server
 
-Use XAMPP / WAMP:
+3️⃣ Start Local Server
+
+If using XAMPP/WAMP:
 
 Move quiz-app folder to htdocs
 
-Start Apache and MySQL
+Start Apache & MySQL
 
-Access the app at:
-
-http://localhost/quiz-app/public/
+Visit: http://localhost/quiz-app/public/
 
 📡 API Endpoints
-▶️ Get All Quizzes
+Get All Quizzes
 
-GET /api/get_quizzes.php
+    GET /api/get_quizzes.php
 
-▶️ Get Quiz Questions
+Get Quiz Questions
 
-GET /api/get_quiz.php?id=1
+    GET /api/get_quiz.php?id=1
 
-▶️ Submit Quiz
+Submit Quiz
 
-POST /api/submit_quiz.php
+    POST /api/submit_quiz.php
 
-▶️ Create New Quiz
-
-POST /api/create_quiz.php
+Create Quiz
+  
+    POST /api/create_quiz.php
 
 📝 License
 
 This project is licensed under the MIT License.
-Check the root LICENSE file.
+See the root LICENSE file.
 
 👨‍💻 Developer
 
@@ -107,3 +107,4 @@ Jojin John
 🔗 Portfolio: https://jojin-portfolio.netlify.app/
 
 🔗 LinkedIn: https://www.linkedin.com/in/jojin-john-74386b34a/
+
